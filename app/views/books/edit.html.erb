@@ -1,0 +1,14 @@
+<h1>Editing Book</h1>
+
+<%= form_with model: @book_id, local:true do |f| %>
+
+ <%= f.label :title, "Title" %>
+ <%= f.text_field :title, class: 'form-control book_title' %>
+
+ <%= f.label :body, "Opinion" %>
+ <%= f.text_area :body, class: 'form-control book_title' %>
+
+ <%= f.submit 'Create Book' %>
+
+<% end %>
+

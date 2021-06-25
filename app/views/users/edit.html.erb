@@ -1,0 +1,13 @@
+<h1>User info</h1>
+
+<%= form_with model: @user, local:true do |f| %>
+
+ <%= f.label :name, "Name" %>
+ <%= f.text_field :name, class: 'form-control book_title' %>
+
+ <%= f.label :introduction, "Introduction" %>
+ <%= f.text_area :introduction, class: 'form-control book_title' %>
+
+ <%= f.submit 'Update User' %>
+
+<% end %>
